@@ -1,0 +1,536 @@
+/*<600px*/
+@media screen and (max-width: 600px){
+    
+    /*Header*/
+        header {
+            display:grid;
+            gap:0.3rem;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 0fr;
+            grid-template-areas: 
+                "logo"
+                "nav"
+                "iniciar";
+            .logo{
+                img{
+                    width:55%;
+                }
+            }
+            
+            .iniciar{
+                justify-self:center;
+            }
+            nav{
+                ul{
+                font-size: 0.9rem;
+                padding-left:0;
+                }
+            }  
+        }
+    
+    /*Footer*/
+        footer{
+            display:grid;
+            gap:0.3rem;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas:
+                "redes"
+                "direccion"
+                "logoFooter";
+            .logoFooter{
+                width:40%;
+                justify-self: center;
+            }
+            .redes{
+                ul{
+                    font-size:0.9rem;
+                    padding-left:0;
+                }
+            }          
+        }
+    /*INDEX*/
+        /* Section intro + carrusel*/
+        .intro{
+            display:grid;
+            gap:0.3rem;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+            "textoIntro"
+            "carrusel";
+        }
+        /*Section beneficios*/
+        .beneficios{
+            display:grid;
+            gap:0.3rem;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0fr 1fr 1fr 1fr;
+            grid-template-areas: 
+                "bTitulo"
+                "beneficio1" 
+                "beneficio2" 
+                "beneficio3";
+        }
+        /*Section descripción beneficios*/
+        .descBeneficios{
+            .dBeneficio1{
+                display:grid;
+                gap:0.3rem;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas:  
+                    "textoDB1" 
+                    "imgDB1";
+                    margin-top: 1rem;
+                    div{
+                        margin: 0 2rem 0 2rem;
+                    }
+                    img{
+                        align-self:start;
+                        width:75%;
+                    }
+            }
+            .dBeneficio2{
+                display:grid;
+                gap:0.3rem;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas:  
+                    "textoDB2" 
+                    "imgDB2";
+                margin-top: 0rem;
+                    div{
+                        margin: 0 2rem 0 2rem;
+                    }
+                    img{
+                        align-self:start;
+                        width:75%;
+                    }
+            }
+            .dBeneficio3{
+                display:grid;
+                gap:0.3rem;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas:  
+                    "textoDB3" 
+                    "imgDB3";
+                margin-top: 0rem;
+                    div{
+                    margin: 0 2rem 0 2rem;
+                    }
+                    img{
+                        align-self:start;
+                        width:75%;
+                    }
+            }
+        }
+        /*Section características*/
+        .caract{
+        display:grid;
+        gap:0.3rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "cTitulo cTitulo"
+            "c1 c2"
+            "c3 c4"
+            "c5 c6";
+        }  
+    /*SOBRENOS*/
+        .quienesSomos{
+            img{
+                width:60%;
+            }
+        }
+    /*PROGRAMAS*/
+        .mainProgramas{
+            
+            .nutricion{
+                display:grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 0fr 1fr;
+                grid-template-areas: 
+                    "nTitulo nTitulo"
+                    "nBasico nPers";
+            }
+            .entrenamiento{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0fr 1fr;
+            grid-template-areas: 
+                "eTitulo eTitulo"
+                "eBasico ePers";
+            }
+            .combinado{
+                display:grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 0fr 1fr;
+                grid-template-areas: 
+                    "cbTitulo cbTitulo"
+                    "cbBasico cbPers";
+            }
+        }
+    }
+    
+    
+    /*<480px*/
+    @media screen and (max-width: 480px){
+    
+    /*Header*/
+        header{
+            nav{
+                ul{
+                font-size: 0.7rem;
+                padding-left:0;
+                }
+            }
+        }
+    
+    /*Footer*/
+        footer{
+            display:grid;
+            gap:0.3rem;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0fr 0fr 0fr;
+            grid-template-areas:
+                "redes"
+                "direccion"
+                "logoFooter";
+            .contacto{
+                font-size:0.8rem;
+                margin-top:1rem;
+                margin-bottom:1rem;
+            }
+            .redes{
+                ul{
+                    font-size:0.7rem;
+                    padding-left:0;
+                    margin: 10px auto;
+                }
+            }
+        }
+    
+    /*INDEX*/
+        /* Section intro + carrusel*/
+        .intro{
+            .textoIntro{
+                h1{
+                    font-size:2.7rem;
+                }
+            }
+        }
+    
+        /*Section beneficios*/
+        .beneficios{
+            .bTitulo{
+                font-size:2.4rem;
+            }
+        }
+    
+        /*Section descripción beneficios*/
+        .descBeneficios{
+    
+            .dBeneficio2{
+                margin-top:2rem;
+            }
+    
+            .dBeneficio3{
+                margin-top:2rem;
+            }
+        }
+    
+        /*Section caracteristicas*/
+        .caract{
+            .cTitulo{
+                font-size:2.4rem;
+            }
+        }
+        
+    /*SOBRENOS*/
+        /*Quienes somos*/
+        .quienesSomos{
+            h2{
+                font-size:2.7rem;
+            }
+        }
+    
+        /*Equipo*/
+        .equipo{   
+            h2{
+                font-size:2.4rem;
+            }
+        }
+    
+        /*Objetivo*/
+        .objetivo{
+            h2{
+                font-size:2.4rem;
+            }
+        }
+    
+    /*PROGRAMAS*/
+        .mainProgramas{
+            
+            .nutricion{
+                display:grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 0fr 1fr 1fr;
+                grid-template-areas: 
+                    "nTitulo"
+                    "nBasico" 
+                    "nPers";
+    
+                .nTitulo{
+                    font-size:2.4rem;
+                }
+            }
+    
+            .entrenamiento{
+                display:grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 0fr 1fr 1fr;
+                grid-template-areas: 
+                    "eTitulo"
+                    "eBasico"
+                    "ePers";
+    
+                .eTitulo{
+                    font-size:2.4rem;
+                }
+            }
+    
+            .combinado{
+                display:grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 0fr 1fr 1fr;
+                grid-template-areas: 
+                    "cbTitulo"
+                    "cbBasico"
+                    "cbPers";
+            
+                .cbTitulo{
+                    font-size:2.4rem;
+                }
+            }
+    
+            article{
+                margin: 1rem;
+            }
+    
+            h1{
+                font-size:2.7rem;
+            }
+        }       
+    }
+    
+    /*<360px*/
+    @media screen and (max-width: 360px){
+    
+    /*Header*/
+        header{
+            nav{
+                ul{
+                font-size: 0.5rem;
+                padding-left:0;
+                }
+            }
+        }
+    
+    /*Footer*/
+        footer{
+            display:grid;
+            gap:0.3rem;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0fr 0fr 0fr;
+            grid-template-areas:
+                "redes"
+                "direccion"
+                "logoFooter";
+            
+            .contacto{
+                font-size:0.8rem;
+                margin-top:1rem;
+                margin-bottom:1rem;
+            }
+    
+            .redes{
+                ul{
+                    font-size:0.5rem;
+                    padding-left:0;
+                    margin: 10px auto;
+                }
+            }  
+        }
+    
+    /*INDEX*/
+        /* Section intro + carrusel*/
+        .intro{
+            .textoIntro{
+                h1{
+                    font-size:2.3rem;
+                }
+            }
+        }
+    
+        /*Section beneficios*/
+        .beneficios{
+            .bTitulo{
+                font-size:2.2rem;
+            }
+        }
+    
+        /*Section descripción beneficios*/
+        .descBeneficios{
+    
+            .dBeneficio1{
+                display:grid;
+                gap:0.3rem;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 0fr;
+                grid-template-areas:  
+                    "textoDB1" 
+                    "imgDB1";
+                    margin-top: 1rem;
+    
+                    div{
+                        margin: 0 2rem 0 2rem;
+                    }
+    
+                    img{
+                        align-self:start;
+                        width:75%;
+                    }
+            }
+    
+            .dBeneficio2{
+                display:grid;
+                gap:0.3rem;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 0fr;
+                grid-template-areas:  
+                    "textoDB2" 
+                    "imgDB2";
+                margin-top: 2rem;
+    
+                    div{
+                        margin: 0 2rem 0 2rem;
+                    }
+    
+                    img{
+                        align-self:start;
+                        width:75%;
+                    }
+            }
+    
+            .dBeneficio3{
+                display:grid;
+                gap:0.3rem;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 0fr;
+                grid-template-areas:  
+                    "textoDB3" 
+                    "imgDB3";
+                margin-top: 2rem;
+    
+                    div{
+                    margin: 0 2rem 0 2rem;
+                    }
+    
+                    img{
+                        align-self:start;
+                        width:75%;
+                    }
+            }
+        }
+    
+        /*Section caracteristicas*/
+        .caract{
+            .cTitulo{
+                font-size:1.7rem;
+            }
+        }
+    
+    /*SOBRENOS*/
+        /*Quienes somos*/
+        .quienesSomos{
+            h2{
+                font-size:2.3rem;
+            }
+    
+            img{
+                width:80%;
+            }
+        }
+    
+        /*Equipo*/
+        .equipo{   
+            display:grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0fr 1fr 1fr;
+            grid-template-areas: 
+                "eTitulo"
+                "equipo1" 
+                "equipo2";
+    
+            h2{
+                font-size:1.2rem;
+            }
+    
+            article{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+                margin:1rem;
+    
+                .imgRedonda{
+                    width:100px;
+                    height:100px;
+                }
+            }
+        }
+    
+        /*Objetivo*/
+        .objetivo{
+            h2{
+                font-size:1.2rem;
+            }
+    
+            p{
+                font-size:1rem;
+            }
+    
+            a{
+                font-size:1rem;
+            }
+        }
+    
+    /*PROGRAMAS*/
+        .mainProgramas{
+            h1{
+                font-size:2.3rem;
+            }
+    
+            .nutricion{
+                .nTitulo{
+                    font-size:1.2rem;
+                }
+            }
+    
+            .entrenamiento{
+                .eTitulo{
+                    font-size:1.2rem;
+                }
+            }
+    
+            .combinado{
+                .cbTitulo{
+                    font-size:1.2rem;
+                }
+            }
+        }
+    }
